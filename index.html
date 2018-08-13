@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>code player</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script type="text/javascript" src="jquery.min.js"></script>
+
+    <link rel="stylesheet" type="text/css" media="screen" href="index.css" />
+
+    <script src="index.js"></script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div id="logo">code player</div>
+        <div id="buttonContainer">
+            <div class="toggleButton active" id="output">Output</div>
+            <div class="toggleButton" id="css">CSS</div>
+            <div class="toggleButton" id="javascript">javascript</div>
+            <div class="toggleButton active" id="html">HTML</div>
+        </div>
+    </div>
+    <div id="bodyContainer">
+        <textarea id="htmlPanel" class="panel"><p id="paragraph">Hello World</p></textarea>
+
+        <textarea id="cssPanel" class="panel hidden">P {color: green;}</textarea>
+
+        <textarea id="javascriptPanel" class="panel hidden">document.getElementById("paragraph").innerHTML = "Hello Pelumi"</textarea>
+
+        <iframe id="outputPanel" class="panel"></iframe>
+    </div>
+
+</body>
+
+</html>
